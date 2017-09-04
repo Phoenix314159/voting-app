@@ -1,6 +1,6 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import '../styles/App.css';
-import * as actions from '../actions';
+import { voteAngular, voteReact, voteVuejs } from '../actions';
 
 class App extends Component {
     constructor(props) {
@@ -9,13 +9,13 @@ class App extends Component {
     }
 
     handleVoteAngular = () => {
-        this.store.dispatch(actions.voteAngular())
+        this.store.dispatch(voteAngular())
     }
     handleVoteReact = () => {
-        this.store.dispatch(actions.voteReact())
+        this.store.dispatch(voteReact())
     }
     handleVoteVuejs = () => {
-        this.store.dispatch(actions.voteVuejs())
+        this.store.dispatch(voteVuejs())
     }
 
     render() {
