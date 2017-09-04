@@ -7,16 +7,19 @@ const initialState = {
 export default (state = initialState, action) => {
     switch(action.type) {
         case 'VOTE_ANGULAR':
+            console.log('Vote Angular!')
            return Object.assign({}, state, {
-               angular: state.angular +1
+               angular: state.angular + 1
            })
         case 'VOTE_REACT':
+            console.log('Vote React!')
             return Object.assign({}, state, {
-                angular: state.react +1
+                angular: state.react + 1
             })
         case 'VOTE_VUEJS':
+            console.log('Vote VueJS!')
             return Object.assign({}, state, {
-                angular: state.vuejs +1
+                angular: state.vuejs + 1
             })
         default:
             return state;
