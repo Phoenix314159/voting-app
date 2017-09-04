@@ -31,10 +31,10 @@ class App extends Component {
                             <img className="votePicture" src="logos/download.png" onClick={this.handleVoteAngular}/>
                         </div>
                         <div className="col-xs-2">
-                            <img className="votePicture" src="logos/react.svg" onClick={this.handleVoteReact()}/>
+                            <img className="votePicture" src="logos/react.svg" onClick={this.handleVoteReact}/>
                         </div>
                         <div className="col-xs-2">
-                            <img className="votePicture" src="logos/logo.png" onClick={this.handleVoteVuejs()}/>
+                            <img className="votePicture" src="logos/logo.png" onClick={this.handleVoteVuejs}/>
                         </div>
                     </div>
                 </div>
